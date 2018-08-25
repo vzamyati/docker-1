@@ -1,0 +1,13 @@
+# docker run -ti --rm debian
+
+apt-get update && apt-get upgrade -y
+apt-get install -y build-essential git
+
+# -y, --yes, --assume-yes
+           Automatic yes to prompts; assume "yes" as answer to all prompts and
+           run non-interactively. If an undesirable situation, such as
+           changing a held package, trying to install a unauthenticated
+           package or removing an essential package occurs then apt-get will
+           abort. Configuration Item: APT::Get::Assume-Yes.  
+
+# build-essential contains a list of packages which are essential for building Ubuntu packages including gcc compiler, make and other required tools.

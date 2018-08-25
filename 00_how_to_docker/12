@@ -1,0 +1,4 @@
+docker run -d --name spawning-pool --restart=on-failure:10 -e MYSQL_ROOT_PASSWORD=Kerrigan -e MYSQL_DATABASE=zerglings -v hatchery:/var/lib/mysql mysql:5.7
+
+# -e, --env list — Set environment variables.
+# on-failure:10	Restart the container if it exits due to an error, which manifests as a non-zero exit code. (10 sec for restart)
